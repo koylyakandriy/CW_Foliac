@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+@font-face {
+   font-family: 'John';
+   src: url('../font/bigjohn-webfont.woff2') format('woff2'),
+        url('../font/bigjohn-webfont.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'John';
+   src: url('../font/slimjoe-webfont.woff2') format('woff2'),
+        url('../font/slimjoe-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+}
+
+body{
+  font-family: "Lato"
+}
+
+a {
+  text-decoration: none;
+}
+
+header{
+  background: linear-gradient(rgba(60, 73, 85, 0.6), rgba(60, 73, 85, 0.6)), 
+  url("../Foliac-assets/RPXWE3FRGI.jpg");
+  height: 650px;
+  color: #ffffff;
+  position: relative;
+  padding-top: 36px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.header_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header_text h1{
+  font-family: "John", serif;
+  font-weight: bold;
+}
+
+.header_text h2{
+  font-family: "John", serif;
+  font-weight: normal;
+}
+
+.filter {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.filter li {
+  display: inline-block;
+  color: #3c4955;
+  background-color: #eaeaea;;
+  padding: .5em 2em;
+  border-radius: 4px;
+}
+
+.filter li.active,.filter li:hover{
+  color: #fff;
+  background-color: #48bf72 ;
+}
+
+.filter a{
+  color: inherit;
+}
+
+.portfolio_items{
+  height: 830px;
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.portfolio_items li a{
+  /*visibility: hidden;*/
+  color: #fff;
+  background-color: rgba(85, 191, 121, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  bottom: 100%;
+  transition: bottom .2s linear;
+}
+
+.portfolio_items li:hover>a{
+  /*visibility: visible;*/
+  bottom: 0;
+}
+
+.portfolio_items li{
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.portfolio_items li:nth-child(odd){
+  width: 35%;
+}
+
+.portfolio_items li:nth-child(even){
+  width: calc(65% - 40px);
+  margin-left: 40px;
+}
+
+.man_computer{
+  background: linear-gradient(rgba(60, 73, 85, 0.6), rgba(60, 73, 85, 0.6)), 
+  url("../Foliac-assets/men-computer.jpg");
+  height: 650px;
+  color: #ffffff;
+  position: relative;
+  padding-top: 36px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.man_computer .container{
+  height: 100%;
+}
+
+.body_text {
+  height: 100%;
+  margin-left: 35%;
+  padding: 0 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.body_text button{
+  background-color: transparent;
+  border: 2px solid #0dff62;
+  border-radius: 4px;
+  color: #0dff62;
+  padding: .5em 2.5em;
+  text-transform: uppercase;
+  font-style: 14px;
+}
+
+.body_text button:hover{
+  color: #0de253;
+  border-color: #0de253;
+}
+
+.body_text button:active{
+  color: #0de253;
+  border-color: #0de253;
+}
+
+.body_text button:focus{
+  outline: none;
+}
+
+.top_line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_menu{
+    font-family: lato;
+    font-weight: bold;
+    list-style: none;
+    padding-left: 0;
+}
+
+.main_menu a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main_menu li{
+    display: inline-block;
+
+}
+.main_menu li:after{
+    content: "/";
+    margin: 0 2em;
+    color: #646d75;
+}
+
+.main_menu li:last-child:after {
+  content: "";
+}
+
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/* .ba-container{
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+} */
+
+.header_text button{
+  font-family: "Lato";
+  background-color: transparent;
+  border: 2px solid #0dff62;
+  border-radius: 4px;
+  color: #0dff62;
+  padding: .5em 2.5em;
+  text-transform: uppercase;
+  font-style: 14px;
+
+}
+
+.header_text button:hover{
+  color: #0de253;
+  border-color: #0de253;
+}
+
+.header_text button:active{
+  color: #0de253;
+  border-color: #0de253;
+}
+
+.header_text button:focus{
+  outline: none;
+}
+
+.cta h1{
+  color: #48bf72;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-family: 'John', Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.cta form{
+  width: 700px;
+  margin: 0 auto;
+}
+
+label:after{
+  position: absolute;
+  content: "";
+  width: 0; 
+  right: -.45em;
+  height: 15px; 
+  border-top: .4em solid transparent;
+  border-bottom: .4em solid transparent;
+  border-left: .4em solid #3c4955;
+  top: 12px;
+}
+
+label{
+  position: relative;
+  box-sizing: border-box;
+  right: -4px;
+  width: 2.5em;
+  font-size: 16px;
+  display: inline-block;
+  background-color: #3c4955;
+  color: #fff;
+  text-align: center;
+  line-height: 2.5em;
+  border: 2px solid #3c4955;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+input, textarea{
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 0 0 0 1.5em;
+  line-height: 2.5em;
+  border: 2px solid #3c4955;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+  color: a6a5a5;
+  font-weight: bold;
+}
+
+#name, #email{
+  width: calc((100% / 2) - 2.8em);
+  margin-bottom: 30px;
+}
+
+ .message_field_cont label:after{
+  top: 1em;
+} 
+
+.message_field_cont{
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 30px;
+}
+
+textarea{
+  width: 100%;
+}
+
+input[type="submit"]{
+  display: block;
+  width: 100%;
+  background-color: #48bf72;
+  border: none;
+}
+
+footer{
+  background-color: #c34955;
+  color: #fff;
+  margin-top: 30px;
+  padding: 50px 0;
+}
+
+
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .left{
+  font-size: 18px;
+  color: #000;
+}
+
+.hexagon{
+  position: relative;
+  width: 57px; 
+  height: 32.291px;
+  background-color: #64C7CC;
+  margin: 16.45px 0; 
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.hexagon:before, .hexagon:after{
+  content: "";
+  position: absolute;
+  /*width: 0;*/
+  border-left: 28.5px solid transparent;
+  border-right: 28.5px solid transparent;
+}
+
+
+.hexagon:before{
+  bottom: 100%;
+  border-bottom: 16.45px solid #64C7CC;
+}
+
+.hexagon:after{
+  top: 100%;
+  left: 0;
+  /*width: 0;*/
+  border-top: 16.45px solid #64c7cc;
+}
+
+.hexagon.twitter{
+  background-color: #55acee;
+}
+
+.hexagon.twitter:before{
+  border-bottom: 16.45px solid #55acee;
+}
+
+.hexagon.twitter:after{
+  border-top: 16.45px solid #55acee;
+}
+
+.hexagon.linkedin{
+  background-color: #0976b4;
+}
+
+.hexagon.linkedin:before{
+  border-bottom: 16.45px solid #0976b4;
+}
+
+.hexagon.linkedin:after{
+  border-top: 16.46px solid #0976b4;
+}
+
+.hexagon.dribbble{
+    background-color: #ea4c89;
+}
+.hexagon.dribbble:before{
+    border-bottom: 16.45px solid #ea4c89;
+}
+.hexagon.dribbble:after{
+    border-top: 16.45px solid #ea4c89;
+}
+
+.hexagon.behance{
+    background-color: #1769ff;
+}
+.hexagon.behance:before{
+    border-bottom-color: #1769ff;
+}
+.hexagon.behance:after{
+    border-top-color: #1769ff;
+}
+
+.fab{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+    transition: color .0s ease-in, border-color .0s ease-in, background-color .0s ease-in, opacity .0s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+    display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}

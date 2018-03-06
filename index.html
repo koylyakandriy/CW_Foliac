@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CW_Lesson_8</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+    <meta name="description" content="" />
+    <link rel="icon" href="favicon.png"/>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="top_line">
+		    <div class="logo">
+		        <img src="Foliac-assets/foliac-logo.png" alt="logo">
+		    </div>
+		    <ul class="main_menu">
+		        <li><a href="#">Accueli</a></li>
+		        <li><a href="#">Portfolio</a></li>
+		        <li><a href="#">About</a></li>
+		        <li><a href="#">Contact</a></li>
+		    </ul>
+		</div>
+		<div class="header_text">
+			<h1>voici votre prochain portfolio</h1>
+			<h2>un template psd simple et gratuit </h2>
+			<button>mes travaux</button>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div class="container">
+		<ul class="filter">
+			<li class="active"><a href="#">Tous les projets</a></li>
+			<li><a href="#">Tous les projets</a></li>
+			<li><a href="#">UI/UX design</a></li>
+			<li><a href="#">Illustration</a></li>
+			<li><a href="#">Motion design</a></li>
+		</ul>
+		<ul class="portfolio_items">
+			<li style="height:35%; background-image: url('Foliac-assets/multiple items.jpg');"><a href="#"><h2>Forest app
+</h2><span>application mobile</span></a></li>
+			<li style="height:65%; left:35%; background-image: url('Foliac-assets/identité visuelle.jpg');"><a href="#"><h2>Forest app
+			</h2><span>application mobile</span></a></li>
+			<li style="height: calc(65% - 40px); top: calc(35% + 40px); background-image: url('Foliac-assets/filters2.jpg');"><a href="#"><h2>Forest app
+			</h2><span>application mobile</span></a></li>
+			<li style="height: calc(35% - 40px); top: calc(65% + 40px); left: 35%; background-image: url('Foliac-assets/prototype.jpg');"><a href="#"><h2>Forest app
+			</h2><span>application mobile</span></a></li>
+		</ul>
+	</div>
+	<div class="man_computer">
+		<div class="container">
+			<div class="body_text">
+				<h1>Michal Dupon</h1>
+				<h3>Webdesigner, illustrateur, auteur</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+				<button>me contacter</button>
+			</div>
+		</div>
+		
+	</div>
+	<div class="container cta">
+		<form action="./form.php" method="post">
+			<h1>my container</h1>
+			<label for="name"><i class="fas fa-user"></i></label>
+			<input id="name" type="text" name="name" value="" placeholder="Vorte nom">
+            <label for="email"><i class="fas fa-envelope"></i></label>
+            <input id="email" type="email" name="email" value="" placeholder="Votre email">
+            <div class="message_field_cont">
+            	<label for="massage"><i class="fas fa-pencil-alt"></i></label>
+            	<textarea id="massage" name="massage" rows="8" cols="70" placeholder="Votre message"></textarea>
+            </div>
+            <input type="submit" name="submit" value="Envoyer">
+		</form>
+	</div>
+</main>
+<footer>
+	<div class="container">
+		<div class="left">Copyright © 2015 by beneggen - www.beneggen.fr</div>
+		<div class="right">
+			<div class="hexagon twitter"><i class="fab fa-twitter"></i></div>
+			<div class="hexagon linkedin"><i class="fab fa-linkedin"></i></div>
+			<div class="hexagon dribbble"><i class="fab fa-dribbble"></i></div>
+			<div class="hexagon behance"><i class="fab fa-behance"></i></div>
+		</div>
+	</div>
+</footer>
+
+
+</body>
+</html>
